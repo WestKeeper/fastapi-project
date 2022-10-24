@@ -1,22 +1,21 @@
 from typing import Optional
 
-from fastapi import APIRouter
-from fastapi import Depends
-from fastapi import Request
-from fastapi import responses
-from fastapi import status
-from fastapi.templating import Jinja2Templates
-from fastapi.security.utils import get_authorization_scheme_param
-from sqlalchemy.orm import Session
-
 from apis.version1.route_login import get_current_user_from_token
+from db.models.users import User
 from db.repository.jobs import create_new_job
 from db.repository.jobs import list_jobs
 from db.repository.jobs import retreive_job
 from db.repository.jobs import search_job
 from db.session import get_db
-from db.models.users import User
+from fastapi import APIRouter
+from fastapi import Depends
+from fastapi import Request
+from fastapi import responses
+from fastapi import status
+from fastapi.security.utils import get_authorization_scheme_param
+from fastapi.templating import Jinja2Templates
 from schemas.jobs import JobCreate
+from sqlalchemy.orm import Session
 from webapps.jobs.forms import JobCreateForm
 
 

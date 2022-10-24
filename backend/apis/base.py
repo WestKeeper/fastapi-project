@@ -1,8 +1,7 @@
-from fastapi import APIRouter
-
 from apis.version1 import route_jobs
-from apis.version1 import route_users
 from apis.version1 import route_login
+from apis.version1 import route_users
+from fastapi import APIRouter
 
 
 api_router = APIRouter()

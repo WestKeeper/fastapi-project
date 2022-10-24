@@ -1,5 +1,4 @@
 from fastapi import APIRouter
-
 from webapps.auth import route_login
 from webapps.jobs import route_jobs
 from webapps.users import route_users

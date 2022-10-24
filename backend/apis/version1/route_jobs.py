@@ -1,23 +1,23 @@
-from typing import Optional
-from fastapi import APIRouter
-from fastapi import Depends
-from fastapi import HTTPException
-from fastapi import status
-from sqlalchemy.orm import Session
 from typing import List
+from typing import Optional
 
 from apis.version1.route_login import get_current_user_from_token
 from db.models.jobs import Job
 from db.models.users import User
-from db.session import get_db
 from db.repository.jobs import create_new_job
 from db.repository.jobs import delete_job_by_id
 from db.repository.jobs import list_jobs
-from db.repository.jobs import update_job_by_id
 from db.repository.jobs import retreive_job
 from db.repository.jobs import search_job
+from db.repository.jobs import update_job_by_id
+from db.session import get_db
+from fastapi import APIRouter
+from fastapi import Depends
+from fastapi import HTTPException
+from fastapi import status
 from schemas.jobs import JobCreate
 from schemas.jobs import ShowJob
+from sqlalchemy.orm import Session
 
 
 router = APIRouter()

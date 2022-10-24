@@ -1,7 +1,6 @@
 #db >repository > login.py
-from sqlalchemy.orm import Session
-
 from db.models.users import User
+from sqlalchemy.orm import Session
 
 
 def get_user(username:str, db: Session):

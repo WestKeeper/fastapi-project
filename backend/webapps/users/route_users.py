@@ -7,8 +7,8 @@ from fastapi import responses
 from fastapi import status
 from fastapi.templating import Jinja2Templates
 from schemas.users import UserCreate
-from sqlalchemy.orm import Session
 from sqlalchemy.exc import IntegrityError
+from sqlalchemy.orm import Session
 from webapps.users.forms import UserCreateForm
 
 
