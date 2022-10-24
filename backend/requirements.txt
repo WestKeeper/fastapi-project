@@ -2,6 +2,7 @@ aiofiles # for static files
 fastapi==0.85.1
 jinja2==3.1.2 # for template
 psycopg2-binary # for database
+passlib[bcrypt] # hashing
 pydantic==1.10.2
 pydantic[email] # for email validation
 python-dotenv # for loading environment variables
