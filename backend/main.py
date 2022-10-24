@@ -1,8 +1,8 @@
 # main.py
+from fastapi import FastAPI
+
 from apis.general_pages.route_homepage import general_pages_router
 from core.config import settings
-
-from fastapi import FastAPI
 
 
 def include_router(app):
