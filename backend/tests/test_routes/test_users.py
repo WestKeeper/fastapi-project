@@ -1,5 +1,4 @@
 import json
-from urllib import response
 
 
 def test_create_user(client):

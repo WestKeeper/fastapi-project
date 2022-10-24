@@ -11,7 +11,7 @@ from sqlalchemy.orm import sessionmaker
 # this is to include backend dir in sys.path so that we can import from db, main.py
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
-from db.base_class import Base
+from db.base import Base
 from db.session import get_db
 from apis.base import api_router
 
