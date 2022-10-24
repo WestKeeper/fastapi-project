@@ -1,15 +1,16 @@
 # main.py
+from apis.base import api_router
+from webapps.base import api_router as web_app_router
+from core.config import settings
+from db.base import Base
+from db.session import engine
 from fastapi import FastAPI
 from fastapi.staticfiles import StaticFiles
 
-from apis.base import api_router
-from core.config import settings
-from db.session import engine
-from db.base import Base
-
 
 def include_router(app):
-	app.include_router(api_router)
+    app.include_router(api_router)
+    app.include_router(web_app_router)
 
 
 def create_tables():
