@@ -5,6 +5,8 @@ psycopg2-binary # for database
 passlib[bcrypt] # hashing
 pydantic==1.10.2
 pydantic[email] # for email validation
+pytest # for testing
 python-dotenv # for loading environment variables
+requests # for testing
 sqlalchemy # for database
 uvicorn[standard]==0.19.0
